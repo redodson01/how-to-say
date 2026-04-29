@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ -z "$1" ]; then
+  echo "Usage: hts <word>" >&2
+  exit 1
+fi
+
+claude -p "How do you pronounce '$1'? Respond with exactly two lines and nothing else:
+phonetic: <syllables-with-CAPS-on-stressed-syllable>
+rhymes with: <a common word, or 'none'>"
