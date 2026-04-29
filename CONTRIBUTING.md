@@ -2,7 +2,9 @@
 
 ## Development
 
-The whole tool is a single bash script at `bin/hts`. To lint locally:
+The whole tool is a single bash script at `bin/hts`. Install
+[shellcheck](https://www.shellcheck.net/) (`brew install shellcheck` on macOS)
+to lint it locally:
 
 ```bash
 make test     # runs shellcheck against bin/hts
